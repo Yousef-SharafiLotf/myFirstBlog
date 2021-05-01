@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
+    <div class="row">
     {% for todo in todos %}
-        <h2>{{ todo.title }}</h2>
-        <p>{{ todo.body }}</p>
-        <small>{{ todo.date }}</small>
-        <hr>
+        <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                     <h2>{{ todo.title }}</h2>
+                </div>
+                <div class="card-text">
+                    <p>{{ todo.body }}</p>
+                    <small class="badge bg-primary text-light">{{ todo.date }}</small>
+                </div>
+
+            </div>
+        </div>
+        </div>
     {% endfor %}
+    </div>
+
 {% endblock %}
 
