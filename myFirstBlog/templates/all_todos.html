@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ pageTitle }}</title>
+</head>
+<body>
+    {% for todo in todos %}
+        <h2>{{ todo.title }}</h2>
+        <p>{{ todo.body }}</p>
+        <small>{{ todo.date }}</small>
+        <hr>
+    {% endfor %}
+
+</body>
+</html>
