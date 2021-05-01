@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ todo.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{ todo.title }}</h1>
+        <small class="badge bg-primary">{{ todo.date }}</small>
+        <hr>
+        <p>{{ todo.body }}</p>
+    </div>
+{% endblock %}
